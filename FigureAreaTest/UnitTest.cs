@@ -28,7 +28,7 @@ namespace FigureAreaTest
             Assert.AreEqual(expectationTriangle2, resultTriangle2, "Ожидаемая площадь второго треугольника не равна фактической");
         }
         [TestMethod]
-        public void GetAreaTestThirdTriagle() 
+        public void GetAreaTestThirdTriagle()//Неверный
         {
             double expectationTriangle3 = 301;
             double resultTriangle3 = triangle3.GetArea();
@@ -48,7 +48,7 @@ namespace FigureAreaTest
             Assert.IsTrue(triangle1.RightTriangle(), "Треугольник не равнобедренный");//Если треугольник не прямоугольный, выведется исключение.
         }
         [TestMethod]
-        public void RightSecondTriangleTest()
+        public void RightSecondTriangleTest()//Неверный
         {
             Assert.IsTrue(triangle2.RightTriangle(), "Треугольник не равнобедренный");
         }
