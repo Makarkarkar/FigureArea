@@ -13,7 +13,7 @@ namespace FigureArea
         {
             R = r;
         }
-        public Circle() { }//Крнструктор по умолчанию.
+        public Circle() { }//Конструктор по умолчанию.
         public double GetArea()//Метод нахождения площади круга.
         {
             return 3.14 * R * R;
