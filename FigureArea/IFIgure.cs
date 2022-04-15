@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace FigureArea
 {
-    interface IFigure //Интерфейс для создания наших фигур.
+    interface IFigure //Interface for creating our figures.
     {
         
         double GetArea();

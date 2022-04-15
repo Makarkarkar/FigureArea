@@ -1,11 +1,11 @@
 ﻿namespace FigureArea
 {
-    public class Triangle : IFigure //Класс треугольника.
+    public class Triangle : IFigure //Triangle class.
     {
-        public Triangle() {  }//Конструктор по умолчанию.
-        public int A { get; set; }//Свойство стороны А.
-        public int B { get; set; }//Свойство стороны В.
-        public int C { get; set; }//Свойство стороны С.
+        public Triangle() {  }//The default constructor.
+        public int A { get; set; }//Property of side A.
+        public int B { get; set; }//Property of side B.
+        public int C { get; set; }//Property of side C.
 
         public Triangle(int a, int b, int c)
         {
@@ -14,12 +14,12 @@
             C = c;    
         }
        
-        public double GetArea()//Метод нахождения площади треугольника, возвращает значения с точностью в два знака после запятой.
+        public double GetArea()//The method of finding the area of a triangle, returns values with an accuracy of two decimal places.
         {
             double p = (A + B + C)/2;
             return Math.Round(Math.Sqrt(p * (p - A) * (p - B) * (p - C)),2);
         }
-        public bool RightTriangle()//Булевый проверки на равнобедренность.
+        public bool RightTriangle()//Boolean checks for squareness.
         {
             int sqA = A*A;
             int sqB = B*B;

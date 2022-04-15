@@ -14,48 +14,49 @@ namespace FigureAreaTest
         Circle circle1 = new Circle(5);
 
         [TestMethod]
-        public void GetAreaTestFrstTriagle()//Тестовый метод для проверки правильности нахождения площади.
+        public void GetAreaTestFrstTriagle()//A test method for verifying the correctness of finding the area.
         {
-            double expectationTriangle1 = 6;//Ожидаемая площадь.
-            double resultTriangle1 = triangle1.GetArea();//Фактическая площадь.
-            Assert.AreEqual(expectationTriangle1, resultTriangle1, "Ожидаемая площадь первого треугольника не равна фактической");//Если ожидания не совпали с действительностью, выведется исключение.
+            double expectationTriangle1 = 6;//Expected area.
+            double resultTriangle1 = triangle1.GetArea();//The actual area.
+
+            Assert.AreEqual(expectationTriangle1, resultTriangle1, "The expected area of the first triangle is not equal to the actual");//If the expectations do not match the reality, an exception will be thrown.
         }
         [TestMethod]
         public void GetAreaTestSecondTriagle() 
         { 
             double expectationTriangle2 = 8.94;
             double resultTriangle2 = triangle2.GetArea();
-            Assert.AreEqual(expectationTriangle2, resultTriangle2, "Ожидаемая площадь второго треугольника не равна фактической");
+            Assert.AreEqual(expectationTriangle2, resultTriangle2, "The expected area of the second triangle is not equal to the actual");
         }
         [TestMethod]
-        public void GetAreaTestThirdTriagle()//Неверный
+        public void GetAreaTestThirdTriagle()//Incorrect.
         {
             double expectationTriangle3 = 301;
             double resultTriangle3 = triangle3.GetArea();
-            Assert.AreEqual(expectationTriangle3, resultTriangle3, "Ожидаемая площадь третьего треугольника не равна фактической"); 
+            Assert.AreEqual(expectationTriangle3, resultTriangle3, "The expected area of the third triangle is not equal to the actual"); 
         }
         [TestMethod]
         public void GetAreaTestCircle() 
         {
             double expectationCircle1 = 78.5;
             double resultCircle1 = circle1.GetArea();
-            Assert.AreEqual(expectationCircle1, resultCircle1, "Ожидаемая площадь первого круга не равна фактической"); 
+            Assert.AreEqual(expectationCircle1, resultCircle1, "The expected area of the first circle is not equal to the actual"); 
         }
      
         [TestMethod]
-        public void RightFirstTriangleTest()//Тестовый метод для проверки прямоугольности треугольника.
+        public void RightFirstTriangleTest()//A test method for checking the squareness of a triangle.
         {
-            Assert.IsTrue(triangle1.RightTriangle(), "Треугольник не равнобедренный");//Если треугольник не прямоугольный, выведется исключение.
+            Assert.IsTrue(triangle1.RightTriangle(), "The triangle is not rectangular.");//Если треугольник не прямоугольный, выведется исключение.
         }
         [TestMethod]
-        public void RightSecondTriangleTest()//Неверный
+        public void RightSecondTriangleTest()//Incorrect.
         {
-            Assert.IsTrue(triangle2.RightTriangle(), "Треугольник не равнобедренный");
+            Assert.IsTrue(triangle2.RightTriangle(), "The triangle is not rectangular.");
         }
         [TestMethod]
         public void RightThirdTriangleTest()
         {
-            Assert.IsTrue(triangle3.RightTriangle(), "Треугольник не равнобедренный");
+            Assert.IsTrue(triangle3.RightTriangle(), "The triangle is not rectangular.");
         }
 }
 }

@@ -6,15 +6,15 @@ using System.Threading.Tasks;
 
 namespace FigureArea
 {
-    public class Circle : IFigure//Класс круга.
+    public class Circle : IFigure//Circle class.
     {
-        public int R { get; set; }//Свойство радиуса.
-        public Circle(int r)//Конструктор.
+        public int R { get; set; }//The radius property.
+        public Circle(int r)//Constructor
         {
             R = r;
         }
-        public Circle() { }//Конструктор по умолчанию.
-        public double GetArea()//Метод нахождения площади круга.
+        public Circle() { }//The default constructor.
+        public double GetArea()//The method of finding the area of the circle.
         {
             return 3.14 * R * R;
         }
