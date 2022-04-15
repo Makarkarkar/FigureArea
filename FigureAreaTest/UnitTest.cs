@@ -14,7 +14,7 @@ namespace FigureAreaTest
         Circle circle1 = new Circle(5);
 
         [TestMethod]
-        public void GetAreaTestFrstTriagle()//A test method for verifying the correctness of finding the area.
+        public void GetAreaTestFrstTriangle()//A test method for verifying the correctness of finding the area.
         {
             double expectationTriangle1 = 6;//Expected area.
             double resultTriangle1 = triangle1.GetArea();//The actual area.
@@ -22,14 +22,14 @@ namespace FigureAreaTest
             Assert.AreEqual(expectationTriangle1, resultTriangle1, "The expected area of the first triangle is not equal to the actual");//If the expectations do not match the reality, an exception will be thrown.
         }
         [TestMethod]
-        public void GetAreaTestSecondTriagle() 
+        public void GetAreaTestSecondTriangle() 
         { 
             double expectationTriangle2 = 8.94;
             double resultTriangle2 = triangle2.GetArea();
             Assert.AreEqual(expectationTriangle2, resultTriangle2, "The expected area of the second triangle is not equal to the actual");
         }
         [TestMethod]
-        public void GetAreaTestThirdTriagle()//Incorrect.
+        public void GetAreaTestThirdTriangle()//Incorrect.
         {
             double expectationTriangle3 = 301;
             double resultTriangle3 = triangle3.GetArea();
@@ -46,7 +46,7 @@ namespace FigureAreaTest
         [TestMethod]
         public void RightFirstTriangleTest()//A test method for checking the squareness of a triangle.
         {
-            Assert.IsTrue(triangle1.RightTriangle(), "The triangle is not rectangular.");//Если треугольник не прямоугольный, выведется исключение.
+            Assert.IsTrue(triangle1.RightTriangle(), "The triangle is not rectangular.");//Г…Г±Г«ГЁ ГІГ°ГҐГіГЈГ®Г«ГјГ­ГЁГЄ Г­ГҐ ГЇГ°ГїГ¬Г®ГіГЈГ®Г«ГјГ­Г»Г©, ГўГ»ГўГҐГ¤ГҐГІГ±Гї ГЁГ±ГЄГ«ГѕГ·ГҐГ­ГЁГҐ.
         }
         [TestMethod]
         public void RightSecondTriangleTest()//Incorrect.
